@@ -4,31 +4,23 @@ println(x);
 println("You said \"Hello!\" to me.");
 //
 String name = "Ebrar Ejder";
-String phrase = "can count to";
-int highest_number = 0;
-long evenHigher = 0;
-float backwardsCounting = 0.1;
-double wayBack = 0.0;
+String phrase = "can run as far as";
+int lowest_number = 6;
+long higherNumber = 0;
+float backwardsCounting = 0.3;
+double wayBack = 0.1;
 //
-// Concatenation: two ways
-//println();
-println("\n" + name + phrase + highest_number);
-println ("\n", name, phrase, highest_number);
 //
-//Pick a number and create formuale to retun the value in two ways ()
-/*Use following operators (See Processing.org / References / Operators)
-Arithmetics Operators: +, -, *, /
-Modulus or modula: %
-*/
-println("\nCounting with Formulae, examplars using Baker's Dozen"); //Baker's Dozen
-println("Starting Variable is", highest_number); //Returns 0
-evenHigher = highest_number+=13; //Returns Baker's Dozen,
-println("Assignment Example, as formula:", highest_number+=13); //Returns 2xBaker'sDozen
-println("Memory Variable is", evenHigher); //Returns Baker's Dozen as memory
-println("Arithmetic Example as formula:", highest_number+1); //Returns 1+2xBaker's Dozen
-println("Modula or Modulus Example:", evenHigher % 14); //Returns Baker's Dozen, as a reminder
-/*
-evenHigher = highest_number+=13; //Returns Baker's Dozen,
-println(highest_number);
-println("Memory Variable is", evenHigher); //Returns Baker's Dozen as memory
-*/
+println("\n" + name + phrase + lowest_number);
+println ("\n", name, phrase, lowest_number);
+//
+//
+//
+
+println("\nCounting using Formulae, with a Dozen"); //I will be using a dozen
+println("Our staring variable is", lowest_number); //The number goes down to 6 
+higherNumber = lowest_number+=6; //The number becomes a dozen again
+println("My Example for this assignment, in formula:", lowest_number+=12); //Becomes 2x Dozen
+println("The memory of the variable is", higherNumber); //Becomes a dozen in memory
+println("My Aruthmetic example in formula:", lowest_number+1); //Becomes 1+2xDozen
+println("My Modula example:", higherNumber % 14); //The number goes back to Dozen
