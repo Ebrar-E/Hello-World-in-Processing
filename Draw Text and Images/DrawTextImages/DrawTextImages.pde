@@ -1,6 +1,7 @@
 //Global Variables
 int titleX, titleY, titleWidth, titleHeight;
-int imageStartWidth, imageStartHeight, imageWidthRatio, imageHeightRatio, imageWidth, imageHeight;
+int imageStartWidth, imageStartHeight;
+Float imageWidthRatio, imageHeightRatio, imageWidth, imageHeight;
 String title = "Wahoo!";
 PFont titleFont;
 color purple = #2C08FF; 
@@ -26,10 +27,10 @@ titleY = height*1/10;
 titleWidth = width*3/5;
 titleHeight = height*1/10;
 //
-imageWidthRatio = 400.0/400.0;
-imageHeightRatio = 400.0/400.0;
 imageStartWidth = width*0;
 imageStartHeight = height*1/2;
+imageWidthRatio = 400.0/400.0;
+imageHeightRatio = 400.0/400.0;
 imageWidth = width*imageWidthRatio;
 imageHeight = width*imageHeightRatio;
 //
@@ -44,4 +45,5 @@ text(title, titleX, titleY, titleWidth, titleHeight);
 fill(white); //reset
 //Space for more rectangles below, with reset values
 rect(imageStartWidth, imageStartHeight, imageWidth, imageHeight);
-//image(pic, imageStartWidth, imageWidth, imageHeight);
+//
+image(pic, imageStartWidth, imageStartHeight, imageWidth, imageHeight);
