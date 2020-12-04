@@ -1,9 +1,12 @@
 //Global Variables
 int titleX, titleY, titleWidth, titleHeight;
+int imageStartWidth, imageStartHeight, imageWidthRatio, imageHeightRatio, imageWidth, imageHeight;
 String title = "Wahoo!";
 PFont titleFont;
-color purple = #2C08FF; //Not mice for Night Mode
+color purple = #2C08FF; 
 color white = #FFFFFF;
+PImage pic;
+
 //
 //Display Geomtery
 size(500, 600); //fullScreen(); //displayWidth & displayHeight
@@ -16,12 +19,19 @@ printArray(fontList); //For listing all possible fonts to choose, then createFon
 */
 titleFont = createFont ("Harrington", 55); //Verify font exists
 //Tools / Create Font / Find Font / Do Not Press "OK", known bug
-
+pic = loadImage("9-ettyimages-889566972.jpg");
 //Populating Variables
 titleX = width*1/5;
 titleY = height*1/10;
 titleWidth = width*3/5;
 titleHeight = height*1/10;
+//
+imageWidthRatio = 400.0/400.0;
+imageHeightRatio = 400.0/400.0;
+imageStartWidth = width*0;
+imageStartHeight = height*1/2;
+imageWidth = width*imageWidthRatio;
+imageHeight = width*imageHeightRatio;
 //
 //Laying out text space and tyopgraphical Features
 rect(titleX, titleY, titleWidth, titleHeight);
@@ -33,3 +43,5 @@ textFont(titleFont, 50); //Change the number until it fits, largest font size
 text(title, titleX, titleY, titleWidth, titleHeight);
 fill(white); //reset
 //Space for more rectangles below, with reset values
+rect(imageStartWidth, imageStartHeight, imageWidth, imageHeight);
+//image(pic, imageStartWidth, imageWidth, imageHeight);
