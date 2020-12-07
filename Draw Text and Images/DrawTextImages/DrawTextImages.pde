@@ -2,7 +2,7 @@
 int titleX, titleY, titleWidth, titleHeight;
 int imageStartWidth, imageStartHeight;
 Float imageWidthRatio, imageHeightRatio, imageWidth, imageHeight;
-String title = "Wahoo!";
+String title = "Cowabunga!";
 PFont titleFont;
 color purple = #2C08FF; 
 color white = #FFFFFF;
@@ -20,7 +20,7 @@ printArray(fontList); //For listing all possible fonts to choose, then createFon
 */
 titleFont = createFont ("Harrington", 55); //Verify font exists
 //Tools / Create Font / Find Font / Do Not Press "OK", known bug
-pic = loadImage("9-ettyimages-889566972.jpg");
+pic = loadImage("Capture-4.jpg");
 //Populating Variables
 titleX = width*1/5;
 titleY = height*1/10;
@@ -29,8 +29,8 @@ titleHeight = height*1/10;
 //
 imageStartWidth = width*0;
 imageStartHeight = height*1/2;
-imageWidthRatio = 400.0/400.0;
-imageHeightRatio = 400.0/400.0;
+imageWidthRatio = 1400.0/1400.0;
+imageHeightRatio = 788.0/1400.0;
 imageWidth = width*imageWidthRatio;
 imageHeight = width*imageHeightRatio;
 //
