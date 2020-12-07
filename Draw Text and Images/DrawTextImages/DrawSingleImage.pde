@@ -17,7 +17,6 @@ imageX = width*0;
 ImageY = height*0;
 widthImage = width*widthImageRatio;
 heightImage = height*heightImageRatio;
-pic = loadImage("Capture-4.jpg");
 //
 //
 //drawing images
