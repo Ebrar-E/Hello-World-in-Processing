@@ -4,7 +4,7 @@ PImage picture;
 //
 //
 //display geometry
-size(800, 600);
+size(1500, 1500);
 //
 //
 //
@@ -17,8 +17,8 @@ imageX = width*0;
 ImageY = height*0;
 widthImage = width*widthImageRatio;
 heightImage = height*heightImageRatio;
-if ( imageHeight > height) println ("Error: Issue with image display");
+if ( heightImage > height) println ("Error: Issue with image display");
 //
 //drawing images
 rect(imageX, ImageY, widthImage, heightImage);
-image(picture, imageX, ImageY, imageWidth, imageHeight);
+image(picture, imageX, ImageY, widthImage, heightImage);
