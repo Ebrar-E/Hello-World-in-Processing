@@ -4,7 +4,7 @@ PImage picture;
 //
 //
 //display geometry
-size(600, 300); //can't use fullscreen it causes issues in my laptop
+size(800, 600);
 //
 //
 //
@@ -17,8 +17,8 @@ imageX = width*0;
 ImageY = height*0;
 widthImage = width*widthImageRatio;
 heightImage = height*heightImageRatio;
-//
+if ( imageHeight > height) println ("Error: Issue with image display");
 //
 //drawing images
 rect(imageX, ImageY, widthImage, heightImage);
-image(pic, imageX, ImageY, imageWidth, imageHeight);
+image(picture, imageX, ImageY, imageWidth, imageHeight);
