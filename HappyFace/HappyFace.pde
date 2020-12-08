@@ -24,32 +24,32 @@ faceY = height*1/2;
 faceDiameter = height; //will get the variable shortSide
 //
 //left eye
-leftEyeX = width*1/20;
-leftEyeY = height*1/20; 
-eyeDiameter = height;
+leftEyeX = width*7/20;
+leftEyeY = height*7/20; 
+eyeDiameter = height*5/20;
 //
 //right eye
-rightEyeX = width*3/20;
-rightEyeY = height*3/20;
-eyeDiameter = height;
+rightEyeX = width*13/20;
+rightEyeY = height*7/20;
+eyeDiameter = height*5/20;
 //
 //nose
 noseX1 = width*10/20;
-noseY1 = height*6/20; 
-noseX2 = width*12/20;
-noseY2 = height*15/30;
-noseX3 = width*8/20;
-noseY3 = height*15/30;
+noseY1 = height*8/20; 
+noseX2 = width*11/20;
+noseY2 = height*18/30;
+noseX3 = width*9/20;
+noseY3 = height*18/30;
 //
 //mouth
-mouthX1 = width*1/20;
-mouthY1 = height*3/20;
-mouthX2 = width*3/20;
-mouthY2 = height*3/20;
+mouthX1 = width*8/20;
+mouthY1 = height*21/30;
+mouthX2 = width*12/20;
+mouthY2 = height*21/30;
 //
 //measles
-measlesX = width*15/30;
-measlesY = height*25/30;
+measlesX = width*17/30;
+measlesY = height*26/30;
 measlesDiameter = width*1/20;
 //
 //the face
