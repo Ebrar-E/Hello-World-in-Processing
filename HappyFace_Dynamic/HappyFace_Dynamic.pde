@@ -10,14 +10,11 @@ float measlesX, measlesY, measlesDiameter;
 color red = #FF1212;
 color measlesColor = red;
 //
-//display geometry
-size(600, 400); 
-//if (width > height) shortSide = height;
-//println(shortSide);
-//
-//populating variables
-//
-//face
+void setup() {
+ //display geometry
+  size(600, 400);
+  //variable population
+  //face
 faceSquareX = width*1/2-height*1/2;
 faceSquareY = height*0;
 faceSquareSide = height; //shorter side
@@ -51,11 +48,7 @@ mouthY2 = height*21/30;
 mouthThick = 12;
 reset = 1;
 //
-//measles
-measlesX = width*17/30;
-measlesY = height*26/30;
-measlesDiameter = width*5/20;
-//
+//initial visual data
 //the face
 //
 //face
@@ -72,11 +65,19 @@ triangle(noseX1, noseY1, noseX2, noseY2, noseX3, noseY3);
 strokeWeight(mouthThick);
 line(mouthX1, mouthY1, mouthX2, mouthY2);
 strokeWeight(reset);
-//
-//the measles
-measlesX = random(width);
+} //end setup()
+
+void draw() {
+  measlesX = random(width);
 measlesY = random(height);
+fill(measlesColor);
 measlesDiameter = random(height*1/20, height*2/20);
 ellipse(measlesX, measlesY, measlesDiameter, measlesDiameter);
-fill(measlesColor);
-//
+fill(reset);
+} //end draw()
+
+void keyPressed() {
+} //end keyPressed()
+
+void mousePressed() {
+} //end mousePressed()
