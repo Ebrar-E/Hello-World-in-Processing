@@ -5,7 +5,7 @@ float faceX, faceY, faceDiameter;
 float leftEyeX, leftEyeY, eyeDiameter;
 float rightEyeX, rightEyeY;
 float noseX1, noseY1, noseX2, noseY2, noseX3, noseY3;
-float mouthX1, mouthY1, mouthX2, mouthY2;
+float mouthX1, mouthY1, mouthX2, mouthY2, mouthThick;
 float measlesX, measlesY, measlesDiameter;
 //
 //display geometry
@@ -46,6 +46,7 @@ mouthX1 = width*8/20;
 mouthY1 = height*21/30;
 mouthX2 = width*12/20;
 mouthY2 = height*21/30;
+mouthThick = 15;
 //
 //measles
 measlesX = width*17/30;
