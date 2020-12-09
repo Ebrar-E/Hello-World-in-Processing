@@ -5,8 +5,10 @@ float faceX, faceY, faceDiameter;
 float leftEyeX, leftEyeY, eyeDiameter;
 float rightEyeX, rightEyeY;
 float noseX1, noseY1, noseX2, noseY2, noseX3, noseY3;
-float mouthX1, mouthY1, mouthX2, mouthY2, mouthThick;
+float mouthX1, mouthY1, mouthX2, mouthY2, mouthThick, reset;
 float measlesX, measlesY, measlesDiameter;
+color red = #FF1212;
+color measlesColor = red;
 //
 //display geometry
 size(600, 400); 
@@ -46,12 +48,13 @@ mouthX1 = width*8/20;
 mouthY1 = height*21/30;
 mouthX2 = width*12/20;
 mouthY2 = height*21/30;
-mouthThick = 15;
+mouthThick = 12;
+reset = 1;
 //
 //measles
 measlesX = width*17/30;
 measlesY = height*26/30;
-measlesDiameter = width*1/20;
+measlesDiameter = width*5/20;
 //
 //the face
 //
@@ -66,9 +69,14 @@ ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
 triangle(noseX1, noseY1, noseX2, noseY2, noseX3, noseY3);
 //mouth
 //strokeCap(); //round defualt
-//strokeWeight(mouthThick);
+strokeWeight(mouthThick);
 line(mouthX1, mouthY1, mouthX2, mouthY2);
+strokeWeight(reset);
 //
 //the measles
+measlesX = random(width);
+measlesY = random(height);
+measlesDiameter = random(height*1/20, height*2/20);
 ellipse(measlesX, measlesY, measlesDiameter, measlesDiameter);
+fill(measlesColor);
 //
