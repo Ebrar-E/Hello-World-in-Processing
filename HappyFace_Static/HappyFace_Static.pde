@@ -76,7 +76,8 @@ strokeWeight(reset);
 //the measles
 measlesX = random(width);
 measlesY = random(height);
+fill(measlesColor);
 measlesDiameter = random(height*1/20, height*2/20);
 ellipse(measlesX, measlesY, measlesDiameter, measlesDiameter);
-fill(measlesColor);
+fill(reset);
 //
