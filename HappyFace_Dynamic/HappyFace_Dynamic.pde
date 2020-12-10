@@ -43,8 +43,8 @@ void setup() {
 } //end setup()
 
 void draw() {
-  measlesX = random((width/6)+measlesDiameter, width-(width/6)-measlesDiameter);
-  measlesY = random((height/10)+measlesDiameter, height-(height/10)-measlesDiameter);
+  measlesX = random((width/4)+measlesDiameter, width-(width/4)-measlesDiameter);
+  measlesY = random((height/11)+measlesDiameter, height-(height/11)-measlesDiameter);
   measlesDiameter = random(height*1/20, height*1/15);
   fill(measlesColor);
   ellipse(measlesX, measlesY, measlesDiameter, measlesDiameter);
