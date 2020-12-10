@@ -37,19 +37,36 @@ void setup() {
   triangle(noseX1, noseY1, noseX2, noseY2, noseX3, noseY3);
   fill(reset);
   //mouth
-  //strokeCap(); //round defualt
   strokeWeight(mouthThick);
   line(mouthX1, mouthY1, mouthX2, mouthY2);
   strokeWeight(reset);
 } //end setup()
 
 void draw() {
-  measlesX = random(width);
-  measlesY = random(height);
+  measlesX = random((width/6)+measlesDiameter, width-(width/6)-measlesDiameter);
+  measlesY = random((height/10)+measlesDiameter, height-(height/10)-measlesDiameter);
+  //measlesX = random(rectFaceX, rectFaceX+rectFaceWidth);
+  measlesDiameter = random(height*1/20, height*1/15);
   fill(measlesColor);
-  measlesDiameter = random(height*1/20, height*2/20);
   ellipse(measlesX, measlesY, measlesDiameter, measlesDiameter);
   fill(reset);
+  //
+  //layering for eyes left and right
+  fill(eyeColor);
+  ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
+  ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
+  fill(reset);
+  //
+  //layering for the nose
+  fill(noseColor);
+  triangle(noseX1, noseY1, noseX2, noseY2, noseX3, noseY3);
+  fill(reset);
+  //
+  //layering for mouth
+  strokeWeight(mouthThick);
+  line(mouthX1, mouthY1, mouthX2, mouthY2);
+  strokeWeight(reset);
+  
 } //end draw()
 
 void keyPressed() {
