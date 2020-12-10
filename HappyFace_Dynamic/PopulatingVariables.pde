@@ -1,4 +1,4 @@
-void populatingVariables() {} //end populatingVariables()
+void populatingVariables() {
 
 //face
   faceSquareX = width*1/2-height*1/2;
@@ -32,4 +32,6 @@ void populatingVariables() {} //end populatingVariables()
   mouthX2 = width*12/20;
   mouthY2 = height*21/30;
   mouthThick = 12;
-  reset = 1; }
+  reset = 1; 
+} //end populatingVariables()
+  

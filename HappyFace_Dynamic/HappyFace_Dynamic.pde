@@ -7,8 +7,8 @@ float rightEyeX, rightEyeY;
 float noseX1, noseY1, noseX2, noseY2, noseX3, noseY3;
 float mouthX1, mouthY1, mouthX2, mouthY2, mouthThick, reset;
 float measlesX, measlesY, measlesDiameter;
-color red = #FF1212;
-color measlesColor = red;
+color red = #FF1212, skin = #FAB877, nose = #DCB478,  blue = #26A22B;
+color measlesColor = red, skinColor = skin, noseColor = #DCB478, eyeColor = blue;
 //
 void setup() {
   //display geometry
@@ -21,13 +21,21 @@ void setup() {
   //
   //face
   rect(faceSquareX, faceSquareY, faceSquareSide, faceSquareSide);
+  fill(skinColor);
   ellipse(faceX, faceY, faceDiameter, faceDiameter);
+  fill(reset);
   //left eye
+  fill(eyeColor);
   ellipse(leftEyeX, leftEyeY, eyeDiameter, eyeDiameter);
+  fill(reset);
   //right eye
+  fill(eyeColor);
   ellipse(rightEyeX, rightEyeY, eyeDiameter, eyeDiameter);
+  fill(reset);
   //nose
+  fill(noseColor);
   triangle(noseX1, noseY1, noseX2, noseY2, noseX3, noseY3);
+  fill(reset);
   //mouth
   //strokeCap(); //round defualt
   strokeWeight(mouthThick);
